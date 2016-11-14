@@ -1,0 +1,14 @@
+.block-list {
+	  lost-center: $site-width;
+	background:blue;
+}
+.block {
+	lost-column: 1/4;
+	&:nth-child(odd) {
+		background:grey;
+	}
+}
+
+footer {
+	background:grey;
+}

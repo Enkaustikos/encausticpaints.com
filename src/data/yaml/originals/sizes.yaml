@@ -1,0 +1,24 @@
+'originals-sizes':
+  - name: 1oz (29ml) Cake 
+    image: 1.jpg
+    size: 1
+
+  - name: 3oz (88ml)
+    image: 3.jpg
+    size: 3
+
+  - name: 4oz (118ml)
+    image: 4.jpg
+    size: 1
+
+  - name: 8oz (236ml)
+    image: 8.jpg
+    size: 8
+
+  - name: 12oz (354ml)
+    image: 12.jpg
+    size: 12
+
+  - name: 16oz (472ml) 
+    image: 16.jpg
+    size: 16

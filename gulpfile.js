@@ -12,6 +12,6 @@ gulpRequireTasks({
 });
 
 /* default task. this is run by using the 'gulp' command */
-gulp.task('default', ['images', 'html', 'styles', 'server']);
+gulp.task('default', ['server']);
 
 

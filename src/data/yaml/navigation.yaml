@@ -1,0 +1,109 @@
+'navigation':
+  - name: Products
+    url: ./products
+    number: 1
+    subcategory:
+      - name: Paints
+        url: ./paints
+        number: 1
+        subcategory2: 
+          - name: Hot Cakes
+            url: ./hot-cakes
+          - name: Hot Sticks
+            url: ./hot-sticks
+          - name: Wax Snaps
+            url: ./wax-snaps
+          - name: Original Cakes
+            url: ./originals
+
+      - name: Mediums &amp; Sundries
+        url: ./mediums-sundries
+        number: 2
+
+      - name: Sets
+        url: ./mediums-sundries
+        number: 3
+        subcategory2: 
+          - name: Hot Cake Sets
+            url: ./hc-sets
+          - name: Hot Stick Sets
+            url: ./hs-sets
+          - name: Wax Snap Sets
+            url: ./ws-sets
+
+      - name: Tools
+        url: ./Tools
+        number: 4
+
+      - name: Printmaking
+        url: ./printmaking
+        number: 5
+
+  - name: About
+    url: ./about
+    number: 2
+    subcategory:
+      - name: History
+        url: ./history
+
+      - name: Awards
+        url: ./awards
+
+      - name: Our Team
+        url: ./our-team
+
+  - name: Resources
+    url: ./resources
+    number: 3
+    subcategory:
+      - name: Our Colors
+        url: ./colors
+
+      - name: Events, Demos, Workshops
+        url: ./events
+
+      - name: Educational
+        url: ./educational
+
+      - name: Health &amp; Safety
+        url: ./health-safety
+
+      - name: FAQ
+        url: ./faq
+
+      - name: Download a Catalog
+        url: ./catalog
+
+      - name: Videos
+        url: ./videos
+    
+  - name: Purchase
+    number: 4
+    url: ./purchase
+
+  - name: Free Offers
+    number: 5
+    url: ./free-offers
+
+  - name: Dealer Info
+    url: ./dealer-info
+    number: 6
+    subcategory:
+      - name: Display Options
+        url: ./Display
+
+      - name: Marketing Tools
+        url: ./marketing
+
+      - name: MSDS &amp; Safety
+        url: ./msds
+
+      - name: Promotions
+        url: ./promotions
+
+      - name: Training
+        url: ./training
+    
+  - name: Contact
+    number: 7
+    url: ./contact

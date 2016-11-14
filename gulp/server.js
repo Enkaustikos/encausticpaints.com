@@ -8,7 +8,8 @@ module.exports = function (gulp, callback) {
         server: config.server.dest
     });
 
-    gulp.watch(config.styles.src, ['styles']);
-    gulp.watch(config.html.template, ['html']);
-    gulp.watch(config.html.src, ['html']);
+    gulp.watch(config.styles.src, ['styles']).on('change', reload);
+    gulp.watch(config.html.template, ['html']).on('change', reload);
+    gulp.watch(config.html.partials, ['html']).on('change', reload);
+    gulp.watch(config.html.src, ['html']).on('change', reload);
 };

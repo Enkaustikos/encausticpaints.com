@@ -1,12 +1,13 @@
 {
   "styles" : {
-    "src" : "./src/**/*.+(scss|styl)",
+    "src" : "./src/styles/**/*.+(scss|styl)",
     "outputName" : "style.min.css",
     "dest" : "./dist/css/"
   },
   "html" : {
     "src" : "./src/pages/**/*.+(html|nunjucks)",
     "dataSrc" : "../src/data/data.json",
+    "partials" : "./src/templates/partials/**/*.nunjucks",
     "template" : "./src/templates/",
     "dest" : "./dist"
   },
@@ -17,6 +18,20 @@
   "server" : {
     "src" : "",
     "dest" : "./dist"
+  },
+  "markdown" : {
+    "src" : "./src/pages/**/*.+(md|markdown)",
+    "dest" : "./dist"
+  },
+  "yaml" : {
+    "src" : "./src/data/yaml/**/*.+(yaml|yml)",
+    "name" : "./src/data/yaml/yaml-combined.json",
+    "dest" : "./src/data/json/"
+  },
+  "json" : {
+    "src" : "./src/data/json/**/*.json",
+    "name" : "combined.json",
+    "dest" : "./src/data/"
   },
   "tasks" : {
     "src" : "/gulp/"

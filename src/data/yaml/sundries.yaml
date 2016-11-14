@@ -1,0 +1,128 @@
+'sundries':
+  uspwhite:
+    name: US Pharmaceutical Grade White Beeswax
+    url: ./usp-white
+    sizes: 
+      - name: 8oz (227g) Silver Bag
+        price: aa
+        upc: bb
+        sku: cc
+
+      - name: 16oz (454g) Silver Bag
+        price: dd
+        upc: ee
+        sku: ff
+
+  uspyellow:
+    name: US Pharmaceutical Grade Yellow Beeswax
+    url: ./usp-yellow
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+      - name: 
+        price: 
+        upc: 
+        sku: 
+
+  bleached:
+    name: Bleached Beeswax
+    url: ./bleached-beeswax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  carnauba:
+    name: Carnauba Wax
+    url: ./carnauba-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  luster:
+    name: Luster Wax
+    url: ./luster-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  micro:
+    name: Microcrystalline Wax
+    url: ./micro-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  impasto:
+    name: Impasto Wax
+    url: ./impasto-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  damar:
+    name: Damar Resin
+    url: ./damar-resin
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  rabbit:
+    name: Rabbit Skin Glue
+    url: ./rabbit-skin-glue
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  soy:
+    name: Soy Wax
+    url: ./soy-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  waxmedium:
+    name: Wax Medium
+    url: ./wax-medium
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+  xd:
+    name: XD Wax medium
+    url: ./xd-wax-medium
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  
+
+
+  slick:
+    name: Slick Wax (Cleaning Wax)
+    url: ./slick-wax
+    sizes: 
+      - name: 
+        price: 
+        upc: 
+        sku:  

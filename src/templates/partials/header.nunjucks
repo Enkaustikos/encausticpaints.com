@@ -1,3 +1,5 @@
 <!-- header.nunjucks -->
 <header>
+
+{% include "partials/navigation.nunjucks" %}
 </header>

@@ -1,13 +1,24 @@
-<!-- index.nunjucks -->
+---
+title: Welcome to ACME Co.
+---
+
+
 {% extends "layout.nunjucks" %}
 
 {% block content %}
+
 <section>
-<h1>It's working!</h1>
-
-{% for nav in navigation %}
-<h2>{{nav.name}}</h2>
-{% endfor %}
-
+	<div class="banner banner__home">
+	</div>
 </section>
+
+<section class="block-list">
+	{% for item in homeblocks %}
+	<div class="block">
+		<a href="{{item.url}}"><img src="{{item.img}}"/></a>
+		<p>{{item.name}}</p>
+	</div>
+	{% endfor %}
+</section>
+
 {% endblock %}

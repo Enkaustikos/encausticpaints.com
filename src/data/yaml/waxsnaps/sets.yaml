@@ -1,0 +1,24 @@
+'waxsnap-sets':
+  - name: Introductory Set
+    upc: 813043014121
+    sku: EN4121
+    id: intro
+    description: Wax Snaps Introductory Set with 2 Free Limited Edition Colors Professional encaustic wax paint professionally milled in the United States using the finest lightfast pigments  and blended with USP beeswax and damar resin. Highly pigmented, our paints can be used full strength or diluted with wax medium to create glazes or to extend your paints. This set includes Naphthol Red, Bismuth Yellow, Ultramarine Blue, Cobalt Green, Titanium White, Burnt Sienna and Wax Medium. This set also includes 2 Free Limited Edition colors.  Atmosphere is a bluish periwinkle hue with a slight purple note.  It is an outstanding color to be used as is, but for mixing colors would be ideal for making rose, pinks, purples and grays. Savannah is a Naples Yellow with a modern twist.  It is a special blend of lightfast pigments that will add warmth and light to any painting.
+    msrp: $89.99
+    img: waxsnaps/sets/intro.jpg
+
+  - name: Historical Set
+    upc: 813043014220
+    sku: EN4220
+    id: historic
+    description: Professional encaustic wax paint professionally milled in the United States using the finest lightfast pigments  and blended with USP beeswax and damar resin. Highly pigmented, our paints can be used full strength or diluted with wax medium to create glazes or to extend your paints. This set contains five lightfast historical pigments, Vagone Green, Bohemian Green Earth, Caput Mortuum, Pompei Red, Italian Gold Ochre and modern alternatives for Alizarin Crimson and Prussian Blue that offer excellent lighfast qualities This set also includes 2 Free Limited Edition colors.  Bismuth Green and Bismuth Orange are made with new inorganic pigments that are vibrant, clean, semi transparent colors with strong tinting strengths, and excellent lightfastness.
+    msrp: $89.99
+    img: waxsnaps/sets/historic.jpg
+
+  - name: Landscape Set
+    upc: 813043014206
+    sku: EN4206
+    id: landscape
+    description: Wax Snaps Landscape Set Professional encaustic wax paint professionally milled in the United States using the finest lightfast pigments and blended with USP beeswax and damar resin. This set contains Anthraquinone Blue, Burnt Umber, Ultramarine Rose, Cadmium Red Vermillion. Nickel Titanate Yellow, Titanium White and Wax Medium Includes 2 Free Limited Edition colors;  Bismuth Green a new, vibrant, semi transparent colors, that has strong tinting strength, and excellent lightfastness. Atmosphere is a bluish periwinkle hue with a slight purple note.  It is an outstanding color to be used as is, but for mixing colors would be ideal for making rose, pinks, purples and grays.
+    msrp: $89.99
+    img: waxsnaps/sets/landscape.jpg

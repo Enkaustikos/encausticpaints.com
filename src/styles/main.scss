@@ -1,4 +1,5 @@
 /* main.scss */
+$site-width: 1170px;
 
 /* Import Files from /partials */
 @import "partials/reset",
@@ -6,3 +7,5 @@
 		"partials/mixins",
 		"partials/breakpoints",
 		"partials/grid";
+
+@import "partials/blocks";
