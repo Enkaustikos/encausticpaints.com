@@ -1,9 +1,14 @@
 .block-list {
-	  lost-center: $site-width;
+	lost-center: $site-width;
 	background:blue;
 }
 .block {
-	lost-column: 1/4;
+	@include sm {
+		lost-column: 1/2;
+	}
+	@include sm-and-up {
+		lost-column: 1/4;
+	}
 	&:nth-child(odd) {
 		background:grey;
 	}
