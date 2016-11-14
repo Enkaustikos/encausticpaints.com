@@ -1,0 +1,13 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<section>
+<h1>It's working!</h1>
+
+{% for nav in navigation %}
+<h2>{{nav.name}}</h2>
+{% endfor %}
+
+</section>
+{% endblock %}
