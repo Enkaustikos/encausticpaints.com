@@ -1,0 +1,38 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="banner">
+  <div class="gallery" id="slider" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "pageDots": false, "prevNextButtons": false }'>
+    <div class="gallery-cell slide3">test</div>
+  </div>
+</div>
+<section class="page-description">
+  <p>We search the world over for the most beautiful pigments in which to make our paints. Enkaustikos skillfully manufactures over 70 colors of paint that are made from only one pigment. Why is that important? We believe that when you work with single pigment paints you have more control over your personal color mixing.  We also offer several unique custom blends like Midtone Grey, Naples Yellow Hue, and Red Earth Pale that are crafted from years of experience. Whether you like working with single pigment paints or colors premixed for convenience, Enkaustikos is known for the largest assortment of colors, shapes, and sizes to meet your every encaustic need</p>
+</section>
+
+<section class="block-list">
+
+ <div class="block">
+  <a href="/hot-sticks.html"><img src="/img/hotsticks.jpg"/></a>
+  <p>Hot Sticks</p>
+</div>
+
+<div class="block">
+  <a href="/wax-snaps.html"><img src="/img/waxsnaps.jpg"/></a>
+  <p>Wax Snaps</p>
+</div>
+
+<div class="block">
+  <a href="/hot-cakes.html"><img src="/img/hotcakes.jpg" /></a>
+  <p>Hot Cakes</p>
+</div>
+
+<div class="block">
+  <a href="/originals.html"><img src="/img/refill.jpg"></a>
+  <p>Original Cakes</p>
+</div>
+
+</section>
+
+{% endblock %}

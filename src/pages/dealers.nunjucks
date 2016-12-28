@@ -1,0 +1,66 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <style>
+    .search {
+      text-align: center;
+    }
+    .search input {
+      font-size: 20px;
+      width: 300px;
+    }
+    .results {
+      margin: auto;
+      text-align: center;
+    }
+    .results ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+
+  <div class="search">
+    <h1>Search dealers in real time</h1>
+    <input type="text">
+  </div>
+  <div class="results">
+    <ul id="dealers"></ul>
+  </div>
+  <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script>
+$(document).ready(function() {
+  var client = algoliasearch('B6BD10VPAI', 'b3adb004db8c55356889dae57c7b6fe2');
+  var index = client.initIndex('dev_dealers');
+  var $input = $('input');
+  $input.keyup(function() {
+    index.search($input.val(), {
+      hitsPerPage: 10,
+      facets: '*'
+    }, searchCallback);
+  }).focus();
+});
+
+function searchCallback(err, content) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  var $dealers = $('#dealers');
+  $dealers.empty();
+
+  for (var i = 0; i < content.hits.length; i++) {
+    $dealers.append(
+    	'<li>' + '<span class="dealer-name">' + content.hits[i].name + '</span>' + '<br/>' +
+    	'<span class="dealer-address">' + content.hits[i].address + '</span>' + '<br/>' + 
+    	'<span class="dealer-city">' + content.hits[i].city + '</span>' + ', ' + 
+    	'<span class="dealer-state">' + content.hits[i].state + '</span>' + ', ' + 
+    	'<span class="dealer-zipcode">' + content.hits[i].zipcode + '</span>' + '<br/>' + 
+    	'<span class="dealer-phone">' + content.hits[i].telephone + '</span>' + '<br/>' +
+    	'<span class="dealer-site">' + '<a href="' + content.hits[i].website + '">' + content.hits[i].website +  '</a>' + '</span>' + '</li>');
+  }
+};
+  </script>
+
+{% endblock %}

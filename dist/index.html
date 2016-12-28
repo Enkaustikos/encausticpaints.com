@@ -3,16 +3,25 @@
 <html lang="en">
 <!-- head.nunjucks -->
 <head>
-<link rel="stylesheet" type="text/css" href="/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.min.css">
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<!-- header.nunjucks -->
 <header>
-
+<div id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <!-- navigation.nunjucks -->
-<nav>
-	<ul>
+<nav class="site-nav">
+	<ul class="nav-list">
 		
 		<li><a href="./products">Products</a></li>
 		
@@ -32,37 +41,33 @@
 </nav>
 </header>
 	</header>
-	
 	<main>
 	
 
-<section>
-	<div class="banner banner__home">
+<div class="banner">
+	<div class="gallery" id="slider" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "pageDots": false, "prevNextButtons": false }'>
+		<div class="gallery-cell slide3">test</div>
 	</div>
-</section>
+</div>
 
 <section class="block-list">
-	
 	<div class="block">
-		<a href="/paints"><img src="./img/paints.jpg"/></a>
+	<a href="/paints.html "><img src="/img/paints.jpg"/></a>
 		<p>Paints</p>
 	</div>
-	
+
 	<div class="block">
-		<a href="/mediums-sundries"><img src="./img/mediums.jpg"/></a>
+		<a href="./mediums-sundries.html "><img src="/img/mediums.jpg"/></a>
 		<p>Mediums</p>
 	</div>
-	
 	<div class="block">
-		<a href="/tools"><img src="./img/tools.jpg"/></a>
+		<a href="./tools.html "><div class="-img"><img src="/img/tools.jpg" /></div></a>
 		<p>Tools</p>
 	</div>
-	
 	<div class="block">
-		<a href="/Other"><img src="./img/printmaking.jpg"/></a>
-		<p>Other</p>
+		<a href="./printmaking"><img src="/img/printmaking.jpg"></a>
+		<p>sdsd</p>
 	</div>
-	
 </section>
 
 
@@ -70,7 +75,7 @@
 
 	<!-- footer.nunjucks -->
 <footer>
-test2
+	<script src="/js/menu.js"></script>
 </footer>
 	<script src="../js/main.js"></script>
 </body>

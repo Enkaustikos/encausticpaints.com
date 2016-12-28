@@ -7,7 +7,7 @@
   "html" : {
     "src" : "./src/pages/**/*.+(html|nunjucks)",
     "dataSrc" : "../src/data/data.json",
-    "partials" : "./src/templates/partials/**/*.nunjucks",
+    "partials" : "./src/templates/**/*.nunjucks",
     "template" : "./src/templates/",
     "dest" : "./dist"
   },

@@ -1,3 +1,15 @@
 section {
-  lost-utility: clearfix;
+	lost-utility: clearfix;
+
+	max-width: $site-width;
+	margin: 0 auto;
+
+	@include sm {
+		max-width: 100%;
+		padding: 0 $unit;
+	}
+
+	p {
+		padding: $unit 0;
+	}
 }

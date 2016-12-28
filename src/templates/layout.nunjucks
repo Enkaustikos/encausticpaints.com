@@ -6,7 +6,6 @@
 	<header>
 		{% include "partials/header.nunjucks" %}
 	</header>
-	
 	<main>
 	{% block content %} {% endblock %}
 	</main>

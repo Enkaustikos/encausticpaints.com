@@ -1,6 +1,6 @@
 <!-- navigation.nunjucks -->
-<nav>
-	<ul>
+<nav class="site-nav">
+	<ul class="nav-list">
 		{% for item in navigation %}
 		<li><a href="{{item.url}}">{{item.name}}</a></li>
 		{% endfor %}

@@ -1,33 +1,78 @@
 nav {
 	background-color: #333;
 
+	@include sm {
+		width:100%;
+		height:100vh;
+		position:absolute;
+		opacity:0;
+		background:rgba(0,0,0,.8);
+		transition: .25s all ease;
+		display:none;
+	}
+
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 
+		max-width:100%;
+		transition: .25s all ease;
+
+		line-height:120px;
+
 		@include md-and-up {
 			lost-center: $site-width;
 		}
-		
+
+		@include sm {
+			opacity:0;
+			max-width:100%;
+			text-align:center;
+			padding:0;
+			width:100%;
+			margin-top: 75px;
+		}
 	}
 
 	li {
-		@include lg-and-up {
-			float: left;
-		}
+		display: inline-block;
 
 		a {
-			display: block;
 			color: white;
-			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
+			font-size: modular-scale(0);
 
 			&:hover {
 				background-color: #111;
 			}
 		}
+
+		@include sm {
+			display: block;
+			text-align: center;
+		}
 	}
+}
+
+#dealers {
+	li {
+		text-align: left;
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+}
+
+.dealer {
+	&-name {
+		font-size:16px;
+	}
+}
+.nav-open {
+	opacity: 1;
+	transition: all .25s  ease;
+	display: block; 
+	z-index: 998;
 }

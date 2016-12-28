@@ -1,8 +1,11 @@
 .block-list {
-	lost-center: $site-width;
-	background:blue;
+	margin-top: $unit;
+	margin-bottom: $unit;
 }
 .block {
+	position: relative;
+	text-align: center;
+
 	@include sm {
 		lost-column: 1/2;
 	}
@@ -10,10 +13,26 @@
 		lost-column: 1/4;
 	}
 	&:nth-child(odd) {
-		background:grey;
+		background: grey;
+	}
+
+	p {
+		position: absolute;
+		color: white;
+		top: 0;
+		right: 0;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+
+		font-size: modular-scale(3);
 	}
 }
 
 footer {
-	background:grey;
+	background: grey;
+}
+
+#wrapper section {
+	display: none;
 }

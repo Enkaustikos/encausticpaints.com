@@ -1,5 +1,10 @@
 <!-- header.nunjucks -->
 <header>
-
+<div id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 {% include "partials/navigation.nunjucks" %}
 </header>

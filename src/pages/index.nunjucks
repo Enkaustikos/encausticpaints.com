@@ -1,24 +1,31 @@
----
-title: Welcome to ACME Co.
----
-
-
 {% extends "layout.nunjucks" %}
 
 {% block content %}
 
-<section>
-	<div class="banner banner__home">
+<div class="banner">
+	<div class="gallery" id="slider" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "pageDots": false, "prevNextButtons": false }'>
+		<div class="gallery-cell slide3">test</div>
 	</div>
-</section>
+</div>
 
 <section class="block-list">
-	{% for item in homeblocks %}
 	<div class="block">
-		<a href="{{item.url}}"><img src="{{item.img}}"/></a>
-		<p>{{item.name}}</p>
+	<a href="/paints.html "><img src="/img/paints.jpg"/></a>
+		<p>Paints</p>
 	</div>
-	{% endfor %}
+
+	<div class="block">
+		<a href="./mediums-sundries.html "><img src="/img/mediums.jpg"/></a>
+		<p>Mediums</p>
+	</div>
+	<div class="block">
+		<a href="./tools.html "><div class="{{ page.id }}-img"><img src="/img/tools.jpg" /></div></a>
+		<p>Tools</p>
+	</div>
+	<div class="block">
+		<a href="./printmaking"><img src="/img/printmaking.jpg"></a>
+		<p>sdsd</p>
+	</div>
 </section>
 
 {% endblock %}

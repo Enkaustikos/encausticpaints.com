@@ -1,0 +1,20 @@
+'paints':
+- name: Hot Sticks
+  url: /views/products/hot-sticks.nunjucks
+  id: hot-sticks
+  img: /img/hotsticks.jpg
+
+- name: Wax Snaps
+  url: /views/products/wax-snaps.nunjucks
+  id: wax-snaps
+  img: /img/wax-snaps.jpg
+
+- name: Hot Cakes
+  url: /views/products/hot-cakes.nunjucks
+  id: hot-cakes
+  img: /img/hotcakes.jpg
+
+- name: Originals
+  url: /views/products/originals.nunjucks
+  id: originals
+  img: /img/refill.jpg
