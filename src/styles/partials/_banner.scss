@@ -2,8 +2,79 @@
 	max-width: $site-width;
 	margin: 0 auto;
 }	
-
 .gallery {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include sm {
+		padding: 150px 0;
+	}
+
+	.pti {
+		width: 200px;
+		bottom: 0;
+		left: 0;
+		padding: 0 0 $unit $unit;
+
+		.pti-svg {
+			fill: white;
+		}
+
+		@include sm {
+			left: auto;
+			bottom: auto;
+			margin-left: auto;
+			margin-right: auto;
+
+			padding: 0;
+		}
+	}
+}
+
+.banner-text {
+	text-align: center;
+	font-family: $serif-2;
+	color: white;
+}
+
+h2.banner-text {
+	font-size: modular-scale(3);
+}
+
+/* Backgrounds */
+#originals-banner {
 	padding: 150px 0;
-	background:red;
+	background-image: url("/img/Red2-min.jpg");
+}
+#hot-cakes-banner {
+	padding: 150px 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+#hot-sticks-banner {
+	padding: 150px 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+#wax-snaps-banner {
+	padding: 150px 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+
+#paints-banner {
+	padding: 150px 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+
+#home-banner {
+	padding: 300px 0 0 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+
+#colors-banner {
+	padding: 100px 0;
+	background-image: url("/img/Red2-min.jpg");
+}
+#faq-banner {
+	padding: 100px 0;
+	background-image: url("/img/Red2-min.jpg");
 }

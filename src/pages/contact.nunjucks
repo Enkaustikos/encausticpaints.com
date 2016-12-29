@@ -3,3 +3,13 @@ title: Contact
 id: contact
 ---
 
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="banner">
+	<div class="gallery" id="faq-banner">
+		<h2 class="banner-text">{{title}}</h1>
+	</div>
+</div>
+
+{% endblock %}

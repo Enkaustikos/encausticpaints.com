@@ -11,6 +11,10 @@
     "template" : "./src/templates/",
     "dest" : "./dist"
   },
+  "scripts" : {
+    "src" : "./src/scripts/**/*.js",
+    "dest" : "./dist"
+  },
   "images" : {
     "src" : "./src/img/**/*.+(jpg|jpeg|png)",
     "dest" : "./dist/img/"
@@ -35,5 +39,8 @@
   },
   "tasks" : {
     "src" : "/gulp/"
+  },
+  "data" : {
+    "src" : "./src/data/**/*.+(yaml|yml)"
   }
 }

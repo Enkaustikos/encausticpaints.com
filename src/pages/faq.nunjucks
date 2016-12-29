@@ -1,0 +1,68 @@
+---
+title: Frequently Asked Questions
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="banner">
+	<div class="gallery" id="faq-banner">
+		<h2 class="banner-text">{{title}}</h1>
+	</div>
+</div>
+<div class="faq">
+	<div class="question-list">
+		<div class="side">
+			<ul class="side-menu fixed" id="sidebar">
+				<li><a href="#gettingstarted"><h5>Getting Started</h5></a></li>
+				<li><a href="#paintingtechniques"><h5>Painting Techniques</h5></a></li>
+				<li><a href="#technicalquestions"><h5>Technical Questions</h5></a></li>
+				<li><a href="#companyretailer"><h5>Company, Retailer, &amp; Purchasing</h5></a></li>
+			</ul>
+		</div>
+
+		<dl id="faqs">
+			<a name="gettingstarted" class="anchor"></a><h2>Getting Started</h2>
+			{% for question in gettingstarted %}
+			<a name="{{ question.id }}"></a>
+			<dt class="toggledown">{{ question.question }}{% include "arrow.svg" %}</dt>
+			<dd>{{ question.answer }}</dd>
+			{% endfor %}
+			<br/>
+			<a name="paintingtechniques" class="anchor"></a><h2>Painting Techniques</h2>
+			{% for question in paintingtechniques %}
+			<a name="{{ question.id }}"></a>
+			<dt class="toggledown">{{ question.question }}{% include "arrow.svg" %}</dt>
+			<dd>{{ question.answer }}</dd>
+			{% endfor %}
+			<br/>
+			<a name="technicalquestions" class="anchor"></a><h2>Technical Questions</h2>
+			{% for question in technicalquestions %}
+			<a name="{{ question.id }}"></a>
+			<dt class="toggledown">{{ question.question }}{% include "arrow.svg" %}</dt>
+			<dd>{{ question.answer }}</dd>
+			{% endfor %}
+			<br/>
+			<a name="companyretailer" class="anchor"></a><h2>Company, Retailer, &amp; Purchasing</h2>
+			{% for question in companyretailer %}
+			<a name="{{ question.id }}"></a>
+			<dt class="toggledown">{{ question.question }}{% include "arrow.svg" %}</dt>
+			<dd>{{ question.answer }}</dd>
+			{% endfor %}
+		</dl>
+	</div>
+</div>
+
+<script>
+	$("#faqs dd").hide();
+	$("#faqs dt").click(function () {
+		$(this).next("#faqs dd").slideToggle(100);
+		$(this).toggleClass("expanded");
+	});
+</script>
+<script>
+	$(".toggledown").click(function(){
+		$(".rotate",this).toggleClass("down"); 
+	});
+</script>
+{% endblock %}

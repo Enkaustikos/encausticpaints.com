@@ -1,6 +1,6 @@
 ---
-title: About
-id: about
+title: Originals
+id: originals
 ---
 
 {% extends "layout.nunjucks" %}

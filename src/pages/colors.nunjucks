@@ -1,0 +1,13 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="banner">
+	<div class="gallery" id="colors-banner">
+		<h2 class="banner-text">Our Colors</h2>
+	</div>
+</div>
+
+{% include "partials/swatches.nunjucks" %}
+
+{% endblock %}

@@ -1,6 +1,6 @@
 ---
-title: About
-id: about
+title: Hot Sticks
+id: hot-sticks
 ---
 
 {% extends "layout.nunjucks" %}

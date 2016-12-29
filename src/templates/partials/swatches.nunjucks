@@ -1,0 +1,45 @@
+<div class="swatches">
+
+  {% for color in colors %}
+  <div class="swatch-gallery">
+    <a href="#{{ color.id }}" rel="modal:open"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/swatches/{{ page.prefix }}{{ color.id }}.jpg"></a>
+    <p>{{ color.name }}</p>
+  </div>
+  {% endfor %}
+
+  {% for color in colors %}
+  <div class="modal" id="{{ color.id }}" style="display:none;">
+    <div class="top">
+      <div>
+        <a href="#{{ color.id }}" rel="modal:open"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/swatches/{{ color.id }}.jpg"></a>
+      </div>
+      <div>
+        <h5>{{ color.name }}</h5>
+        Pigment: {{ color.pigment }}<br/>
+        Opacity: {{ color.opacity }}<br/>
+        Series: {{ color.series }}<br/>
+        Lightfastness: {{ color.lightfastness }}<br/>
+        {% if color.prop %}
+        <span class="prop"><a href="#prop65" rel="modal:open">CA PROP 65</a></span>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="bottom">
+      <p>{{ color.description }}</p>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+<div class="modal" id="prop65" style="display:none;">
+  <span class="prop"><p>CA PROP 65</p></span>
+  <p>
+    The State of California requires clear and reasonable warnings on products and/or storage containers containing chemicals that have been shown to cause cancer, birth defects, or other reproductive harm. Even if these products contain only trace levels of harmful chemicals, a warning is required by the State of California.<br/>
+    Manufacturers of certain products have included warnings pursuant to California Proposition 65, and caution is recommended when using products marked with the Prop 65 icon.
+  </p>
+</div>
+
+<script src="/js/modal.js"></script>
+<script>function init(){for(var a=document.getElementsByTagName("img"),b=0;b<a.length;b++)a[b].getAttribute("data-src")&&a[b].setAttribute("src",a[b].getAttribute("data-src"))}window.onload=init;</script>

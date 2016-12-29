@@ -1,10 +1,16 @@
-<!-- header.nunjucks -->
 <header>
+
 <div id="hamburger">
   <span></span>
   <span></span>
   <span></span>
   <span></span>
 </div>
+
+<div class="site-logo">
+<a href="/">{% include "logo.svg" %}</a>
+</div>
+
 {% include "partials/navigation.nunjucks" %}
+
 </header>

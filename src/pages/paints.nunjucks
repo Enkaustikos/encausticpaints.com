@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="banner">
-  <div class="gallery" id="slider" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "pageDots": false, "prevNextButtons": false }'>
-    <div class="gallery-cell slide3">test</div>
+  <div class="gallery" id="paints-banner" >
+    <h2 class="banner-text">Our Paints</h2>
   </div>
 </div>
 <section class="page-description">
@@ -14,22 +14,22 @@
 <section class="block-list">
 
  <div class="block">
-  <a href="/hot-sticks.html"><img src="/img/hotsticks.jpg"/></a>
+  <a href="/hot-sticks"><img src="/img/hotsticks.jpg"/></a>
   <p>Hot Sticks</p>
 </div>
 
 <div class="block">
-  <a href="/wax-snaps.html"><img src="/img/waxsnaps.jpg"/></a>
+  <a href="/wax-snaps"><img src="/img/waxsnaps.jpg"/></a>
   <p>Wax Snaps</p>
 </div>
 
 <div class="block">
-  <a href="/hot-cakes.html"><img src="/img/hotcakes.jpg" /></a>
+  <a href="/hot-cakes"><img src="/img/hotcakes.jpg" /></a>
   <p>Hot Cakes</p>
 </div>
 
 <div class="block">
-  <a href="/originals.html"><img src="/img/refill.jpg"></a>
+  <a href="/originals"><img src="/img/refill.jpg"></a>
   <p>Original Cakes</p>
 </div>
 

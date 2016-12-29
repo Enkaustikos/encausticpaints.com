@@ -1,8 +1,6 @@
 section {
 	lost-utility: clearfix;
-
-	max-width: $site-width;
-	margin: 0 auto;
+	lost-center: $site-width;
 
 	@include sm {
 		max-width: 100%;

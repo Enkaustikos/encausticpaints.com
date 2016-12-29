@@ -1,109 +1,109 @@
 'navigation':
   - name: Products
-    url: ./products
+    url: /products
     number: 1
     subcategory:
       - name: Paints
-        url: ./paints
+        url: /paints
         number: 1
         subcategory2: 
           - name: Hot Cakes
-            url: ./hot-cakes
+            url: /hot-cakes
           - name: Hot Sticks
-            url: ./hot-sticks
+            url: /hot-sticks
           - name: Wax Snaps
-            url: ./wax-snaps
+            url: /wax-snaps
           - name: Original Cakes
-            url: ./originals
+            url: /originals
 
-      - name: Mediums &amp; Sundries
-        url: ./mediums-sundries
+      - name: Mediums & Sundries
+        url: /mediums-sundries
         number: 2
 
       - name: Sets
-        url: ./mediums-sundries
+        url: /mediums-sundries
         number: 3
         subcategory2: 
           - name: Hot Cake Sets
-            url: ./hc-sets
+            url: /hc-sets
           - name: Hot Stick Sets
-            url: ./hs-sets
+            url: /hs-sets
           - name: Wax Snap Sets
-            url: ./ws-sets
+            url: /ws-sets
 
       - name: Tools
-        url: ./Tools
+        url: /Tools
         number: 4
 
       - name: Printmaking
-        url: ./printmaking
+        url: /printmaking
         number: 5
 
   - name: About
-    url: ./about
+    url: /about
     number: 2
     subcategory:
       - name: History
-        url: ./history
+        url: /history
 
       - name: Awards
-        url: ./awards
+        url: /awards
 
       - name: Our Team
-        url: ./our-team
+        url: /our-team
 
   - name: Resources
-    url: ./resources
+    url: /resources
     number: 3
     subcategory:
       - name: Our Colors
-        url: ./colors
+        url: /colors
 
       - name: Events, Demos, Workshops
-        url: ./events
+        url: /events
 
       - name: Educational
-        url: ./educational
+        url: /educational
 
       - name: Health &amp; Safety
-        url: ./health-safety
+        url: /health-safety
 
       - name: FAQ
-        url: ./faq
+        url: /faq
 
       - name: Download a Catalog
-        url: ./catalog
+        url: /catalog
 
       - name: Videos
-        url: ./videos
+        url: /videos
     
   - name: Purchase
     number: 4
-    url: ./purchase
+    url: /purchase
 
   - name: Free Offers
     number: 5
-    url: ./free-offers
+    url: /free-offers
 
   - name: Dealer Info
-    url: ./dealer-info
+    url: /dealer-info
     number: 6
     subcategory:
       - name: Display Options
-        url: ./Display
+        url: /Display
 
       - name: Marketing Tools
-        url: ./marketing
+        url: /marketing
 
       - name: MSDS &amp; Safety
-        url: ./msds
+        url: /msds
 
       - name: Promotions
-        url: ./promotions
+        url: /promotions
 
       - name: Training
-        url: ./training
+        url: /training
     
   - name: Contact
     number: 7
-    url: ./contact
+    url: /contact

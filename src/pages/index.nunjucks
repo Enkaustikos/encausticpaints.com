@@ -3,27 +3,37 @@
 {% block content %}
 
 <div class="banner">
-	<div class="gallery" id="slider" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "pageDots": false, "prevNextButtons": false }'>
-		<div class="gallery-cell slide3">test</div>
+	<div class="gallery" id="home-banner">
+		<div class="pti">
+			{% include "pti.svg" %}
+		</div>
 	</div>
 </div>
 
 <section class="block-list">
 	<div class="block">
-	<a href="/paints.html "><img src="/img/paints.jpg"/></a>
+		<div class="block-image">
+			<a href="/paints"><img src="/img/paints.jpg"/></a>
+		</div>
 		<p>Paints</p>
 	</div>
 
 	<div class="block">
-		<a href="./mediums-sundries.html "><img src="/img/mediums.jpg"/></a>
+		<div class="block-image">
+			<a href="/mediums"><img src="/img/mediums.jpg"/></a>
+		</div>
 		<p>Mediums</p>
 	</div>
 	<div class="block">
-		<a href="./tools.html "><div class="{{ page.id }}-img"><img src="/img/tools.jpg" /></div></a>
+		<div class="block-image">
+			<a href="/tools "><div class="{{ page.id }}-img"><img src="/img/tools.jpg" /></div></a>
+		</div>
 		<p>Tools</p>
 	</div>
 	<div class="block">
-		<a href="./printmaking"><img src="/img/printmaking.jpg"></a>
+		<div class="block-image">
+			<a href="/printmaking"><img src="/img/printmaking.jpg"></a>
+		</div>
 		<p>sdsd</p>
 	</div>
 </section>

@@ -3,6 +3,10 @@ var data            = require('gulp-data'),
     browserSync     = require('browser-sync').create(),
     reload          = browserSync.reload,
     gulpGrayMatter  = require('gulp-gray-matter'),
+    prettyUrl       = require('gulp-pretty-url'),
+    rename          = require('gulp-rename'),
+    flatten         = require('gulp-flatten'),
+    htmlmin         = require('gulp-htmlmin'),
     config          = require('./config.json').html;
 
 module.exports = function (gulp, callback) {
@@ -14,6 +18,8 @@ module.exports = function (gulp, callback) {
     .pipe(nunjucks({
       path: [config.template]
     }))
+    .pipe(prettyUrl())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(config.dest))
     .on("end", reload);
 };

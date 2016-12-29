@@ -1,8 +1,18 @@
-<!-- navigation.nunjucks -->
 <nav class="site-nav">
 	<ul class="nav-list">
-		{% for item in navigation %}
-		<li><a href="{{item.url}}">{{item.name}}</a></li>
-		{% endfor %}
+	{% for link in navigation %}
+		{% if link.subcategory %}
+		<li class="dropdown">
+			<a href="{{ link.url }}.html">{{ link.name }}</a>
+			<div class="dropdown-content">
+				{% for sub in link.subcategory %}
+				<a href="{{ sub.url }}">{{ sub.name }}</a>
+				{% endfor %}
+			</div>
+		</li>
+		{% else %}
+		<li><a class="page-link" href="{{ link.url }}">{{ link.name }}</a></li>
+		{% endif %}
+	{% endfor %}
 	</ul>
 </nav>

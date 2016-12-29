@@ -12,11 +12,9 @@
 	@include sm-and-up {
 		lost-column: 1/4;
 	}
-	&:nth-child(odd) {
-		background: grey;
-	}
 
 	p {
+		/*
 		position: absolute;
 		color: white;
 		top: 0;
@@ -24,8 +22,10 @@
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
-
-		font-size: modular-scale(3);
+		*/
+		text-align: left;
+		font-family: $serif-2;
+		font-size: modular-scale(1);
 	}
 }
 

@@ -12,4 +12,7 @@ module.exports = function (gulp, callback) {
     gulp.watch(config.html.template, ['html']).on('change', reload);
     gulp.watch(config.html.partials, ['html']).on('change', reload);
     gulp.watch(config.html.src, ['html']).on('change', reload);
+    gulp.watch(config.scripts.src, ['scripts']).on('change', reload);
+
+    gulp.watch(config.data.src, ['data']).on('change', reload);
 };

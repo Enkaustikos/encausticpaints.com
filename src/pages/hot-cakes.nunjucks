@@ -1,0 +1,11 @@
+---
+title: Hot Cakes
+id: hot-cakes
+---
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+{% endblock %}

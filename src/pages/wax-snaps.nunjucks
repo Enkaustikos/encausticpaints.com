@@ -1,0 +1,11 @@
+---
+title: Wax Snaps
+id: wax-snaps
+---
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+{% endblock %}

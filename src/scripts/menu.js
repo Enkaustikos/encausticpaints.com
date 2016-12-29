@@ -5,5 +5,6 @@ $(document).ready(function(){
     $('body').toggleClass('body-overlay');
     $('.nav-list').toggleClass('nav-open');
     $('.site-nav').toggleClass('nav-open');
+    $('.nav-list li a').toggleClass('nav-open');
   });
 });
