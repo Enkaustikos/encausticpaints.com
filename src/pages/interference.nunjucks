@@ -1,0 +1,23 @@
+---
+title: Interference Paint & Medium
+id: interference
+description: Interference pigments are transparent platelets of mica pigment covered with highly refractive metal oxides. When light strikes the surface of these pigments it is refracted, reflected and scattered by the layers that make up the pigment. Because they are transparent they are influenced by the colors from the surface below. Colors mixed with interference medium will change (“flip”) when viewed from different angles. Over a white or light background the color is subtle and the “flip” more obvious. Over a black or dark background the color is more obvious and the “flip” less noticeable.
+---
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<p class="page-description">{{description}}</p>
+
+<section class="interference">
+	{% for item in interference %}
+		<div class="int-paint">
+			<a href="/interference{{item.url}}"><img src="/img/interference/{{item.id}}.jpg" alt="{{item.id}}" /></a>
+			<p>{{item.name}}</p>
+		</div>
+	{% endfor %}
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

@@ -1,0 +1,27 @@
+---
+title: Impasto Wax
+id: impasto-wax
+description: Enkaustikos blends their highest quality pharmaceutical grade beeswax with a pure translucent white microcrystalline wax to produce Impasto Wax. Impasto wax allows artists to inexpensively add actual dimension  and sculptural effects to encaustic paintings. Painters often use Impasto Wax when doing the "Slip and Score" technique that is common in ceramics.  This technique refers to the method of scoring or scratching lines into the surface of a chunk of wax that will be attached to the substrate, dipping the scored side into the molten impasto wax, and sticking it to the substrate.  
+
+readmore: "Facts on Microcrystalline Wax:  Enkaustikos utilizes a high quality microcrystalline wax that is essentially, a complicated carbon based wax characterized by branched, cyclic chains. This allows it to blend better with beeswax and oil colors than paraffin waxes which are only simple, straight carbon based chains.  Microcrystalline wax is also more flexible than paraffin making it ideal for building up layers of textures. and ensures  the integrity of your paint film. Microcrystalline wax melts at a higher temperature (170 to 180 degrees F) than beeswax (143 to 150F degrees) and Enkaustikos paints (working temperature of 175F degrees), allowing you to apply encaustic paint over the modeled surface with minimal disturbance to the bottom sculpted surface. Microcrystalline wax will yellow over time from exposure to UV so it is very important to paint over and encapsulate the impasto wax layer."
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+		<p>{{readmore}}</p>
+	</div>
+</section>
+
+
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

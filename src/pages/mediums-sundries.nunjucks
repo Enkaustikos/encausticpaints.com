@@ -1,0 +1,25 @@
+---
+title: Mediums & Sundries
+id: mediums-sundries
+---
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="banner">
+	<div class="gallery" id="faq-banner">
+		<h2 class="banner-text">{{title}}</h1>
+	</div>
+</div>
+
+<section class="sundry-list">
+{% for sundry in ms %}
+<div class="sundry">
+	<a href="/mediums{{ sundry.url }}">
+		<img src="/img/ms/foilbags/{{ sundry.id }}.jpg"/>
+	</a>
+	<p>{{ sundry.name }}</p>
+</div>
+{% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+---
+title: Interference Green
+id: int-green
+description: This wax medium is a shimmering transparent green when painted over black and displays a subtle off white with just a hint of green over white. This color is hard to capture in a scan or photographs! As you move and the paint catches the light differently, you see green, yellow, and gold reflecting in the light. This is an amazing interference effect with a life of its own! Add to any color to give an enhanced metallic/interference effect. Especially effective when added to greens, yellows, and blues!
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/interference/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

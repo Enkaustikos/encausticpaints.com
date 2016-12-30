@@ -1,0 +1,22 @@
+---
+title: Rabbit Skin Glue
+id: micro-wax
+description: US Rabbit Skin Glue is made from rabbit skin, bone, and tissue.  A variety of artists have found a need for this product, whether utilizing it in canvas sizing or preparing a traditional gesso with it.   In fact, rabbit skin glue has been used for centuries as a traditional organic sizing material to prepare canvas for oil priming.  However, conservation scientists have cautioned painters that rabbit skin glue absorbs atmospheric moisture on damp days and swells while it gives off moisture on dry days and shrinks.  This movement of the size layer can cause oil paintings to crack according to the Smithsonian Conservation Lab.  Yet despite this caution, rabbit skin glue is still widely used by traditional oil painters.  Gilders also use rabbit skin glue to prepare bole. Rabbit skin glue can be mixed with titanium white and precipitated chalk to create a dry gesso which is an ideal surface for encaustic and egg tempera paintings.  No matter your use, you will find that the internet is a good source for the latest advice and formulations on this product.  Rabbit skin is a dry granular powder and must be dissolved in warm water. 
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

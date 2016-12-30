@@ -1,0 +1,24 @@
+---
+title: XD Wax Medium
+id: xd-wax-medium
+description: Enkaustikos Wax Medium is made from a 1:1 ratio of U.S. Pharmaceutical Grade Beeswax and Damar Resin.   Our XD Wax Medium features extra damar.  This Wax Medium has a higher content of damar resin than the original, giving it a thicker consistency when liquified. It also has a sticky tack while drying for easy texture build up and will stay pliable for a longer time than our original Wax Medium. Once cooled however, it is resistant to surface alterations from scraping or incising and offers a hard film. Like the original Wax Medium, XD can be used as a wax paint extender for glazing, and especially useful as a topcoat. If you want to achieve a glass like surface with a single topcoat, this is the product for you.  XD comes in our resealable silver bags for easy storage.  For those who enjoy the convenience of our tins, we also offer XD Wax Medium in our 1.5 fl oz, 6 fl oz metal Hot Cakes tins as well as Hot Sticks and Wax Snaps.
+readmore: *We would like to emphasize that Enkaustikos wax paints and mediums are made with damar resin and not damar varnish. Many encaustic recipes incorrectly suggest that an artist should use damar varnish. This is not a good idea because damar varnish is made with turpentine which is not only flammable but also gives off unhealthy fumes.  Enkaustikos heat filters out the impurities from the damar crystals without the use of solvents. Unlike damar varnish, Enkaustikos Damar Resin is a safe product to work with. 
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+		<p>{{readmore}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

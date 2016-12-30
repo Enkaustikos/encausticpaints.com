@@ -1,0 +1,64 @@
+.sundry-list {
+	padding: $unit 0;
+
+	.sundry {
+		lost-waffle: 1/6;
+		margin-bottom:10px;
+		p {
+			text-align:center;
+		}
+		@include sm {
+			text-align: center;
+			lost-waffle: 1/2;
+		}
+	}
+}
+.page-info {
+	h3, p {
+		text-align:center;
+	}
+	p {
+		max-width:none;
+	}
+}
+
+.sundry-info {
+	h4 {
+		text-align:center;
+	}
+}
+.sundry-sizes {
+	border:1px black solid;
+	margin:0 auto;
+	tr {
+		&:nth-child(odd) {
+			background-color: #dddddd;
+		}
+		th {
+			background:grey;
+			padding-right:10px;
+			padding-left:10px;
+
+		}
+		td {
+			padding-right:15px;
+			text-align:center;
+		}
+	}
+	
+}
+
+.medium {
+	lost-utility: clearfix;
+	@include container;
+	padding: $unit 0;
+	.medium-image {
+		width: 50%;
+		float: left;
+	}
+	.medium-info {
+		width: 50%;
+		float: left
+	}
+
+}

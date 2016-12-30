@@ -1,0 +1,21 @@
+---
+title: Hot Cakes Open Stock
+description: Hot Cakes Description
+id: hc
+---
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+<section class="hot-cakes">
+	<p class="page-description">{{description}}</p>
+
+	<div class="options">
+		<div class="hc"><a href="/hotsticks/open-15"><img src="http://placehold.it/400x400"></a><p>1.5 oz.</p></div>
+		<div class="hc"><a href="/hotsticks/open-4"><img src="http://placehold.it/400x400"></a><p>4 oz.</p></div>
+	</div>
+</section>
+{% endblock %}
+
+

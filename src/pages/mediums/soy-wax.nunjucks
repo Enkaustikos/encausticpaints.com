@@ -1,0 +1,22 @@
+---
+title: Soy Wax
+id: soy-wax
+description: Soy Wax is an eco-friendly wax for cleaning brushes.  Soy Wax is a natural by-product of soy beans used in the food, cosmetic, candle-making industry and art supply industry.  Soy wax melts around 120 degrees Fahrenheit making it a suitable choice for cleaning brushes and tools used in the encaustic process.  Soy wax is sold in an easy to melt flake form and has an off-white opaque appearance.  Do not overheat, heat below smoking temperatures.  Soy Wax is not intended to be mixed with encaustic paints.
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

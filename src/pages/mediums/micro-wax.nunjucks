@@ -1,0 +1,24 @@
+---
+title: Microcrystalline Wax
+id: micro-wax
+description: Pure white microcrystalline wax is used as a plasticizer.  It is more flexible than paraffin and melts at 170 to 180 degrees F.  It is ideal for building up layers of texture on your encaustic paintings  and ensures the integrity of your paint film.  Microcrystalline wax melts at a higher temperature than beeswax (143 to 150F degrees) and our paints (working temperatures 175F degrees), which allows you to apply encaustic paint over the modeled surface with minimal disturbance to the bottom sculpted surface.
+readmore: Facts on Microcrystalline Wax:  Enkaustikos utilizes a high quality microcrystalline wax that is essentially, a complicated carbon based wax characterized by branched, cyclic chains. This allows it to blend better with beeswax and oil colors than paraffin waxes which are only simple, straight carbon based chains. 
+As with all art materials, proper ventilation is important.
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

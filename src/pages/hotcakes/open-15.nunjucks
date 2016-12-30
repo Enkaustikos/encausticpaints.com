@@ -1,0 +1,23 @@
+---
+title: Hot Cake Open Stock 1.5oz.
+id: hcopen-15
+prefix: hc
+producttype: openstock
+productline: hotcakes
+sfolder: hotcakes/15
+type: hotcakes15
+description: Hot Cakes are a favored way to work with encaustic paints, especially if you are just starting out, enjoy controlled color mixing, and like to have a lot of melted paint at the ready. Having the paint already in a tin helps to keep your palette organized, allows you to access liquid paint quickly, making color mixing on the palette easy. It also allows you flexibility on the amount of wax medium you want to add, as this can vary many times through out your work. All these advantages are extremely useful in the classroom setting as well. Plus, the tins are refillable. 
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+<section class="hot-cakes">
+	<div class="{{id}}">
+	<p class="page-description">{{description}}</p>
+	<div class="swatch-list">
+		{% include "partials/swatches/product-swatches.nunjucks" %}
+	</div>
+</div>
+</section>
+{% endblock %}

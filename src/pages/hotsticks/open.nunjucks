@@ -1,0 +1,21 @@
+---
+title: Hot Stick Open Stock
+id: hsopen
+prefix: hs
+producttype: openstock
+productline: hotsticks
+sfolder: hotsticks
+type: hotsticks
+description: Enkaustikos Hot Sticks Encaustic Wax Paint feature the same professional artist quality colors you find in the Hot Cakes line but come in a versatile artist-friendly stick.  The new shape allows artists to use encaustic paints in a whole new way - melting as little or as much paint as they want.  Hot Sticks are available in all 88 colors plus Wax Medium and XD Wax Medium.  The Hot Sticks artist-quality colors are made from the most beautiful pigments, the finest Damar Resin, and United States Pharmaceutical Grade (USP) Beeswax. These paints contain no bleach or synthetic adulterants whatsoever.  We mill each color on our state-of-the-art modern milling machine to bring out the true personality of each pigment.
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="{{id}}">
+	<h3>{{title}}</h3>
+	<p>{{description}}</p>
+	<div class="swatch-list">
+		{% include "partials/swatches/product-swatches.nunjucks" %}
+	</div>
+</div>
+{% endblock %}

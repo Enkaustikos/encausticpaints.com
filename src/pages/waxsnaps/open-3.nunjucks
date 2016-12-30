@@ -1,0 +1,22 @@
+---
+title: Wax Snap Open Stock 3 Pack
+id: wsopen-3
+prefix: ws
+sfolder: waxsnaps/3
+type: waxsnaps3
+description: What’s not to love about our Wax Snaps? They are perfect for the artists who like to melt their paint as they work, have three times the amount of paint as compared to Hot Sticks®, making them a more economical choice, and has a unique shape that allows you to easily snap off what you need.
+readmore: Each Wax Snap measures approximately 1-1/4” long x 4” wide and 1/2” thick. This unique shape allows you to use the whole bar or break off a section with a simple snap. Available in all 88 colors including Graphite, and our three wax mediums: original Wax Medium, XD Wax Medium, and Natural Yellow Wax Medium. Wax Snaps are great for printmaking techniques, direct melting on a hot palette or snapping off a section to refill a Hot Cakes® tin. They are also ideal for the workshop and classroom setting, where you can easily snap, dispense, and share.
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+<section class="wax-snaps">
+	<div class="{{id}}">
+	<p class="page-description">{{description}}</p>
+	<div class="swatch-list">
+		{% include "partials/swatches/product-swatches.nunjucks" %}
+	</div>
+</div>
+</section>
+{% endblock %}

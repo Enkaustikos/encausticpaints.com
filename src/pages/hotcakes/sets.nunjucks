@@ -1,0 +1,35 @@
+---
+title: Hot Cake Sets
+prefix: hc
+id: hotcake-sets
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="hot-cakes-sets">
+	<p class="page-description">{{description}}</p>
+	<div>
+		{% for set in hotcakesets %}
+		<div>
+			<div class="{{prefix}}-img">
+				<img src="/img/hotcakes/sets/{{ set.swatch }}"/>
+				<img src="/img/hotcakes/sets/{{ set.img }}"/>
+			</div>
+			<div class="hc-info">
+				<h3>{{set.name}}</h3>
+				<p>
+					{{set.sku}}{{set.upc}}{{set.msrp}}<br/>
+					{{set.description}}<br/>
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+{% endblock %}
+
+
+
+

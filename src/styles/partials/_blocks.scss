@@ -1,28 +1,23 @@
 .block-list {
 	margin-top: $unit;
 	margin-bottom: $unit;
+
+	padding: $unit 0;
 }
+
 .block {
 	position: relative;
 	text-align: center;
+	lost-column: 1/4;
 
 	@include sm {
 		lost-column: 1/2;
 	}
-	@include sm-and-up {
-		lost-column: 1/4;
+	@include xxs {
+		lost-column: 1;
 	}
 
 	p {
-		/*
-		position: absolute;
-		color: white;
-		top: 0;
-		right: 0;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		*/
 		text-align: left;
 		font-family: $serif-2;
 		font-size: modular-scale(1);
@@ -33,6 +28,24 @@ footer {
 	background: grey;
 }
 
-#wrapper section {
-	display: none;
+.interference {
+	lost-utility: clearfix;
+	padding: $unit 0;
+
+	.int-paint {
+		lost-column: 1/5;
+
+		p {
+			font-family: $serif-2;
+		}
+	}
+}
+.options {
+	lost-utility: clearfix;
+}
+.os, .sets {
+	lost-column: 1/2;
+}
+.hc, .ws {
+	lost-column: 1/3;
 }

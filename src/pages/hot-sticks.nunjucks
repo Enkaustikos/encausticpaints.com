@@ -1,15 +1,22 @@
 ---
 title: Hot Sticks
+description: Are you new to encaustic? Are you a printmaker? Do you love to try new colors? Hot Sticks® are the answer with all 88 colors to choose from right at your fingertips. Extremely versatile, Hot Sticks® are ideal for encaustic printmaking, painting, rubbings, and a multitude of mixed media techniques.
+prefix: hs
 id: hot-sticks
 ---
 
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<div class="banner">
-	<div class="gallery" id="faq-banner">
-		<h2 class="banner-text">{{title}}</h1>
+
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="hot-sticks">
+	<p class="page-description">{{description}}</p>
+	<div class="options">
+		<div class="os" id="/hotsticks/open"><a href="/{{prefix}}-open"><img src="/img/{{prefix}}-open.jpg"></a> <p>Open Stock</p> </div>
+		<div class="sets" id="/hotsticks/sets"><a href="/{{prefix}}-sets"><img src="/img/{{prefix}}-sets.jpg"></a> <p>Sets</p> </div>
 	</div>
-</div>
+</section>
 
 {% endblock %}

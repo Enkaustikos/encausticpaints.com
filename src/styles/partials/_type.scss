@@ -7,3 +7,9 @@ h2 {
 h3 {
 	font-size: modular-scale(1);
 }
+
+.page-description {
+	font-size: modular-scale(1);
+	padding: $unit $unit*2;
+	line-height: 1.25;
+}

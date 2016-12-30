@@ -1,0 +1,22 @@
+---
+title: Luster Wax
+id: luster-wax
+description: Luster Wax has terrific characteristics and is a good alternative to Carnauba wax because it is whiter and clearer.  This is a high quality, synthetic, non-petroleum wax derived from coal.  It can be added to your wax paint to raise the melting point, increase hardness, and increase shine.  Luster Wax requires higher temperatures to melt and blend with your paints as its melting point is actually 205 degrees F. Due to this higher melting point, only a small amount should be added to your paint and care exercised, in order to make sure that you do not burn your paint in your attempt to melt this wax. Once again, it is not a petroleum oil based wax paraffin or microcrystalline.  It comes in small easy to melt flakes or granules (or prills). Enkaustikos recommends starting with 5% addition of Luster Wax to your formula, and increasing as need be for your unique purposes.
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

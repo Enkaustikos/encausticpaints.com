@@ -1,0 +1,25 @@
+---
+title: Carnauba Wax
+id: carnauba
+description: "Unlike most Carnauba wax which typically is a very deep yellow colored wax, Enkaustikos offers a very light, pale yellow wax. This wax is harvested from the smaller, younger leaves of the palm tree. Carnauba Wax is added to paint to raise the melting point and can create a harder, more durable paint film. Carnauba is the hardest of the natural waxes but it is a very brittle wax so be careful not to add too much to your paint as cracking may occur.  Carnauba melts at 187 to 190 degrees F.  It is sold in thin, easy to melt flakes."
+
+readmore: "Interesting Fact: Carnauba Wax is obtained from the leaves of a palm tree known as Copernica Cerifera.  This palm flourishes in the northeastern regions of Brazil reaching an average height of 25-35 feet and proliferates along river banks, streams and damp lowlands. This tree naturally exudes a wax through its fan-shaped leaves to prevent it's own dehydration.  Tree harvesting, where the leaves and sprouts are cut, typically takes place during the dry months of September through February in the Brazilian States of Ceara and Piaui. With a maximum cutting of twenty leaves per year from a tree, the average yield of wax for each tree is about 2 lbs per cutting. Workers use knives on long poles to trim the leaves from mature trees and then the leaves are sun-dried and mechanically thrashed to remove the wax. The color and quality of the wax is therefore, governed by the age of the leaves and care used in processing of this hard, brittle, lustrous wax."
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+		<p>{{readmore}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

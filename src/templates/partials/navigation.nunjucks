@@ -3,7 +3,7 @@
 	{% for link in navigation %}
 		{% if link.subcategory %}
 		<li class="dropdown">
-			<a href="{{ link.url }}.html">{{ link.name }}</a>
+			<a href="{{ link.url }}">{{ link.name }}</a>
 			<div class="dropdown-content">
 				{% for sub in link.subcategory %}
 				<a href="{{ sub.url }}">{{ sub.name }}</a>

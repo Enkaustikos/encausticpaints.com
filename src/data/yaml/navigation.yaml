@@ -65,7 +65,7 @@
       - name: Educational
         url: /educational
 
-      - name: Health &amp; Safety
+      - name: Health & Safety
         url: /health-safety
 
       - name: FAQ
@@ -95,7 +95,7 @@
       - name: Marketing Tools
         url: /marketing
 
-      - name: MSDS &amp; Safety
+      - name: MSDS & Safety
         url: /msds
 
       - name: Promotions

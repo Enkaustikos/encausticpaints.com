@@ -2,8 +2,8 @@ $swatch-margin:10px;
 
 .swatches {
 	lost-utility: clearfix;
-	lost-center: $site-width;
 	padding: $unit 0;
+	@include container;
 
 	@include md {
 		padding: $unit;

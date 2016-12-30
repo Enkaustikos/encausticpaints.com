@@ -1,1 +1,20 @@
 /* _mixins.scss */
+@mixin container {
+	lost-center: $site-width;
+	margin: 0 auto;
+
+	@include sm {
+		max-width:100%;
+	} 
+
+	@include sm {
+		margin: 0 $unit;
+	}
+}
+
+%container {
+	@include container;
+}
+.container {
+	@extend %container;
+}

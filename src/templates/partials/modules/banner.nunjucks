@@ -1,5 +1,5 @@
 <div class="banner">
 	<div class="gallery" id="{{id}}-banner">
-		<h2 class="banner-text">{{title}}</h1>
+		<h2 class="banner-text">{{title}}</h2>
 	</div>
 </div>

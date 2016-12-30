@@ -1,0 +1,12 @@
+<div class="{{id}}-rm">
+	<input type="checkbox" class="read-more-state" id="post-2" />
+	<p class="read-more-wrap">
+		{{description}}
+		<span class="read-more-target">
+			{{readmore}}
+		</span>
+		</p>
+	<label for="post-2" class="read-more-trigger float_center"></label>
+</div>
+
+

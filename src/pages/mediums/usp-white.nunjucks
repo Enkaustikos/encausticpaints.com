@@ -1,0 +1,22 @@
+---
+title: US Pharmaceutical Grade White Beeswax 
+id: usp-white
+description: This beeswax is 100% natural. This wax is United States Pharmaceutical (USP) grade so it has been filtered and purified without the use of harsh chemicals or bleaching agents. It comes in little tiny granules (called prills), just like you see in the photo. You can easily use a tiny bit or a bulk amount. It has the same natural scent that you find with all pure beeswax.  It is often used in cosmetics, medicinal ointments, and pill coatings as it is a high quality, translucent beeswax.  This is the same wax used for Hot Cakes wax paints and mediums. A note of caution, please do not exceed 200 degrees Fahrenheit. 
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

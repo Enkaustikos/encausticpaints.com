@@ -1,0 +1,22 @@
+---
+title: Interference Blue
+id: int-blue
+description: This wax medium is a shimmering transparent cool blue when painted over black and displays a subtle off white with just a hint of blue over white. Add ultra blue or anthraquinone blue to intensify the blue effect or add transparent yellows, reds or greens to create an array of special effect colors.
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/interference/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

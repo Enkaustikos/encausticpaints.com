@@ -1,0 +1,35 @@
+---
+title: Wax Snap Sets
+prefix: ws
+id: waxsnap-sets
+---
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="wax-snaps-sets">
+	<p class="page-description">{{description}}</p>
+	<div>
+		{% for set in waxsnapsets %}
+		<div>
+			<div class="ws-img">
+				<img src="/img/waxsnaps/sets/{{ set.swatch }}"/>
+				<img src="/img/waxsnaps/sets/{{ set.img }}"/>
+			</div>
+			<div class="ws-info">
+				<h3>{{set.name}}</h3>
+				<p>
+					{{set.sku}}{{set.upc}}{{set.msrp}}<br/>
+					{{set.description}}<br/>
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+{% endblock %}
+
+
+
+

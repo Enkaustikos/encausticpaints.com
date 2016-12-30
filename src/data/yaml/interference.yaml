@@ -1,0 +1,20 @@
+'interference':
+- name: Interference Blue
+  url: /blue
+  id: int-blue
+
+- name: Interference Gold
+  url: /gold
+  id: int-gold
+
+- name: Interference Red
+  url: /red
+  id: int-red
+
+- name: Interference Violet
+  url: /violet
+  id: int-violet
+
+- name: Interference Green
+  url: /green
+  id: int-green

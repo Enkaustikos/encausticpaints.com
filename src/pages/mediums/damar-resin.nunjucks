@@ -1,0 +1,25 @@
+---
+title: Damar Resin
+id: damar-resin
+description: "Damar resin is a very people and earth friendly ingredient. Damar resin is harvested from trees in Malaysia and these trees are slashed yearly to ooze sap for harvesting. These trees are not damaged from this process and it is very similar to the tapping of maple trees for syrup. As the sap dries and solidifies, it captures insects, dried leaves, and tree bark so when the damar resin arrives in its crystal form at Enkaustikos, all of these imbedded impurities must be removed. Enkaustikos heat filters the damar resin to make a usable product.  Damar in combination with beeswax produces a paint film with a higher index of refraction and Enkaustikos uses it as a main ingredient in their encaustic paints making the colors appear luminous."
+
+readmore: "*Many encaustic recipes incorrectly suggest that an artist should use damar varnish. This is not a good idea because damar varnish is made with turpentine which is not only flammable but also gives off unhealthy fumes.  We would like to emphasize that our wax paints and mediums are made with damar resin and not damar varnish. We heat filter out the impurities from the damar crystals without the use of solvents. Unlike damar varnish, Enkaustikos Damar Resin is a safe product to work with. The FDA has even approved the use of damar resin to coat the boxes carting fruits and vegetables."
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+		<p>{{readmore}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

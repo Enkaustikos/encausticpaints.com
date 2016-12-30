@@ -4,8 +4,8 @@ $site-width: 1170px;
 /* Import Files from /partials */
 @import "partials/reset",
 		"partials/variables",
-		"partials/mixins",
 		"partials/breakpoints",
+		"partials/mixins",
 		"partials/grid",
 		"partials/banner",
 		"partials/hamburger",
@@ -13,6 +13,7 @@ $site-width: 1170px;
 		"partials/type",
 		"partials/modal",
 		"partials/faq",
+		"partials/sundries",
 		"partials/navigation";
 
 @import "partials/blocks";

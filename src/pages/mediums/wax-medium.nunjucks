@@ -1,0 +1,25 @@
+---
+title: Wax Medium
+id: wax-medium
+description: "Enkaustikos Wax Medium is made from a 6:1 ratio of U.S. Pharmaceutical Grade Beeswax and Damar Resin. Wax Medium has many uses when it comes to encaustic. It can be used as a topcoat, a basecoat, or it can be used to create a textured surface. It can even be added to your wax paints to increase transparency for glazing techniques. For those who like custom colors, Wax Medium is ideal for mixing with your own pigments. Since it is such a versatile medium, Enkaustikos manufactures three types: Enkaustikos Original Wax Medium, Natural Yellow Wax Medium, and Enkaustikos XD Wax Medium which includes extra Damar.  For those artists who like to work with a lot of Wax Medium, Enkaustikos offers larger sizes within their sundries line.  The Wax Medium comes in our resealable silver bags for easy storage.  Enkaustikos also provides bulk sizing for those artists looking for even more product and 1.5 fl oz and 6 fl oz metal Hot Cakes tins, Hot Sticks and Wax Snaps as well."
+
+readmore: "*We would like to emphasize that Enkaustikos wax paints and mediums are made with damar resin and not damar varnish. Many encaustic recipes incorrectly suggest that an artist should use damar varnish. This is not a good idea because damar varnish is made with turpentine which is not only flammable but also gives off unhealthy fumes.  Enkaustikos heat filters out the impurities from the damar crystals without the use of solvents. Unlike damar varnish, Enkaustikos Damar Resin is a safe product to work with."
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+		<p>{{readmore}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

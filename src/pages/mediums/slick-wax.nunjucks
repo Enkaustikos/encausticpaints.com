@@ -1,0 +1,22 @@
+---
+title: Slick Wax
+id: slick-wax
+description: This unique synthetic wax was formulated for cleaning your brushes, tools, and even palette between encaustic color changes. Slick wax eliminates the need for any type of solvent in your studio. Simply have a tin of melted slick wax available on your hot palette and you will be able to avoid color contamination.  When you want to move from one color to another, rinse your brush in the Slick Wax and wipe off any excess wax with a paper towel. The Slick Wax will have removed the color and you can get right back to painting. For those who like to color mix on their palette, you can even use the Slick Wax directly on the palette and with a wipe of a paper towel, you will have a nice clean surface to work on.  Enkaustikos Slick Wax comes in a re-sealable silver bag but is also available in a 6 fl oz metal Hot Cakes tin.  
+---
+
+{% extends "medium.nunjucks" %}
+
+{% block content %}
+{% include "partials/modules/banner.nunjucks" %}
+
+<section class="medium">
+	<div class="medium-image">
+		<img src="/img/ms/foilbags/{{id}}.jpg" alt="{{title}}"/>
+	</div>
+	<div class="medium-info">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+</section>
+{% include "partials/footer.nunjucks" %}
+{% endblock %}
